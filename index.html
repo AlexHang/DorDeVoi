@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dor de voi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta content="Dor De Voi" name="keywords">
+  <meta content="Bine ati venit la DorDeVoi.ro" name="description">
+    <meta property="og:image" content="http://dordevoi.ro/logo.png" />
+    <meta property="og:title" content="Dor De Voi" />
+    <meta property="og:description" content="„Cu totii murim. Scopul nu e sa traim vesnic, ci sa lasam in urma ceva nemuritor.”
+Chuck Palahniuk" />
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  
+  <style>
+  
+  #bgvid{
+      
+      position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow:hidden;
+  }
+  
+  
+  #hero {
+      
+      display: table;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+     overflow:hidden
+    background: url(video1.mp4) top center fixed;
+  }
+  
+      @media only screen and (max-device-width: 700px) {
+
+
+        #bgvid{
+      
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display:none;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom:0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      overflow:hidden;
+      }
+      
+      
+       #hero {
+      
+      display: table;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+     overflow:hidden
+    background: url(https://dordevoi.ro/LogInPage/field.png) 
+    top center fixed;
+  }
+      
+
+    }
+    
+    #log2btn:hover{
+        background: #2dc997;
+  border: 2px solid #2dc997;
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header style="background-color:rgba(52, 59, 64, 0.9);height:100px" id="header" >
+    <div class="container-fluid">
+<a href="http://dordevoi.ro/logo.png"></a>
+      <div id="logo" class="pull-left">
+        <h1 style=" margin-top:-20px;"><a href="#hero"><img src="logo.png" style="height:2em;"></a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero"><h3>Acasa</h3></a></li>
+          <li><a href="#about"><h3>Despre Noi</h3></a></li>
+          <li><a href="#services"><h3>Servicii</h3></a></li>
+          <li><a href="#portfolio"><h3>Pareri</h3></a></li>
+          <li><a href="#team"><h3>Echipa</h3></a></li>
+		  <li><a href="https://dordevoi.ro/LogInPage/LogIn.php"><h3>Log In</h3></a></li>
+          <li><a href="#contact"><h3>Contacti-ne</h3></a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container" style="z-index:10; background-color:rgba(0, 0, 0, 0.31);">
+      <h2 style="font-size: 42px;line-height: 45px; "><i>„Cu totii murim. Scopul nu e sa traim vesnic, ci sa lasam in urma ceva nemuritor.”</i></h2>
+      <h2 style="margin-right: 10%;text-align: right;">Chuck Palahniuk</h2>
+      <a href="https://dordevoi.ro/LogInPage/LogIn.php" class="btn-get-started">Log In pentru a incepe</a>
+       <center><h4><br></h4></center>
+      <center><h2>SAU</h2></center>
+      <a href="https://dordevoi.ro/Safe/ViewSafe/AccessSafe.php" class="btn-get-started">Introduceti o cheie de acces</a>
+      <video style="left:auto; min-height:110%;" onload="playvideobg()" id="bgvid" autoplay loop="loop" >
+          <iframe src="video1.mp4" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" id="bgvid"></iframe>
+    <source src="video2.mp4" type="video/mp4">
+    
+  </video>
+  
+  <script>
+      function playvideobg(){
+          var myVideo = document.getElementById("bgvid"); 
+myVideo.play();
+      }
+  </script>
+  <img style="display:none"  src="http://dordevoi.ro/logo.png">
+  <img style="display:none"  src="https://dordevoi.ro/LogInPage/field.png"> <!--poster="https://dordevoi.ro/LogInPage/field.png"-->
+    </div>
+   
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-12 content order-lg-1 order-2">
+             <h2 class="title">Despre Noi</h2>
+             <p><br></p>
+           <center><h2>
+              Cu ajutorul dordevoi.ro puteti sa va impartasiti emotiile,trairile,sentimentele si gandurile cu persoanele dragi voua chiar si dupa ce nu mai sunteti langa ei .
+            </h2></center>
+<p><br></p>
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shield"></i></div>
+              <h4 class="title"><a href="">Securitate</a></h4>
+              <p class="description">Puteti stoca parole , conturi , date importante pentru dumneavoastra pe care le puteti impartasi cu alte persoane numai atunci cand doriti dumneavoastra</p>
+            </div>
+<p><br></p>
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-book"></i></div>
+              <h4 class="title"><a href="">Amintiri</a></h4>
+              <p class="description">Cu ajutorul nostru puteti sa nu mai aveti grija de a nu va mai aduce aminte zilele de nastere sau datele cu adevarat importante din viata voastra .</p>
+            </div>
+<p><br></p>
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-gift"></i></div>
+              <h4 class="title"><a href="">Cadouri Unice</a></h4>
+              <p class="description">Cu ajutorul platformei puteti trimite cadouri unice chiar si dupa disparitia voastra .</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Statistici</h3>
+          <p class="section-description"> </p>
+        </div>
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">35</span>
+            <p>Clienti</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">147</span>
+            <p>Mesaje</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">462</span>
+            <p>Ore de activitate</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">3</span>
+            <p>Colaboratori</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section><!-- #facts -->
+	
+	 <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action" style="padding: 180px 0;">
+      <div class="container wow fadeIn">
+        <div class="row">
+		<div class="col-lg-1"></div>
+          <div class="col-lg-10 text-center text-lg-left">
+            <i><h1 class="cta-text"> "Când va fi să mori nu te uita la întunericul dinainte, ci la lumina ce laşi în urmă. Şi te vei stinge cu zâmbetul pe buze."</h1></i>
+			<h1 class="cta-text text-right"> Nicolae Iorga</h1>
+			<div class="col-lg-1"></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container-fluid wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Servicii</h3>
+          <p class="section-description"></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-video-camera"></i></a></div>
+              <h4 class="title"><a href="">Video</a></h4>
+              <p class="description">Puteti lasa un mesaj video persoanei dragi , prietenilor sau rudelor.Aveti posibilitatea de seta dumneavoastra data cand acestea sa fie accesibile vizualizarii</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-facebook-official"></i></a></div>
+              <h4 class="title"><a href="">Retele Sociale</a></h4>
+              <p class="description">Mesaje pe care le putem trimite  pe conturile personale de socializare la o anumita data sau eveniment specificat de dumneavoastra. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+              <h4 class="title"><a href="">Mesaje</a></h4>
+              <p class="description">Puteti scrie un mesaj si persoana careia va adresati sa il vada numai atunci cand dumneavoastra doriti.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-file-text"></i></a></div>
+              <h4 class="title"><a href="">Documente</a></h4>
+              <p class="description">Puteti stoca si trimite documente catre orice persoana exact cand doriti dumneavoastra ca aceasta sa intre in posesia lor. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-music"></i></a></div>
+              <h4 class="title"><a href="">Audio</a></h4>
+              <p class="description">Puteti inregistra un mesaj audio pentru eternitate.Vocea dumneavoastra se va auzi in continuare.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-picture-o"></i></a></div>
+              <h4 class="title"><a href="">Imagini</a></h4>
+              <p class="description">Puteti stoca si arata imaginile favorite persoanelor dragi din viata voastra exact cand doriti ca acestea sa le vada.</p>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-floppy-o"></i></a></div>
+              <h4 class="title"><a href="">Stocare si trimitere</a></h4>
+              <p class="description">Puteti stoca anumite obiecte pe care doriti sa le trimiteti cadou persoanelor dragi din viata dumneavoastra la o anumita data chiar daca dumneavoastra nu mai sunteti printre noi.  </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-key"></i></a></div>
+              <h4 class="title"><a href="">Criptare</a></h4>
+              <p class="description">Mesaje lasate de dumneavoastra care se pot debloca numai cu o anumita parola . Securitatea mesajului dumneavoastra este prioritatea noastra.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-truck"></i></a></div>
+              <h4 class="title"><a href="">Livrare fizica</a></h4>
+              <p class="description">Mesaje pe care le putem trimite fizic la o anumita adresa sau locatie la o data specificata de dumneavoastra .</p>
+            </div>
+          </div>
+		  
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+  <section id="life">
+      <div class="container wow fadeIn">
+        <div class="row">
+		<div class="col-lg-1"></div>
+          <div class="col-lg-10 text-center text-lg-left">
+		  <h1 class="cta-text" style="color:white;"> In timpul vietii </h1>
+            <h1 class="cta-text" style="color:white;"> Cu Dordevoi.ro aveti posibilitatea sa trimiteti mesaje pentru cei dragi la o data ulterioara fara sa mai aveti grija ca uitati . Puteti face surprize placute celor apropiati si puteti sa va gestionati timpul si emotiile mult mai eficient .</h1>
+			<div class="col-lg-1"></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+	  <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container-fluid wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Clientii nostri</h3>
+          <p class="section-description">Marturii ale oamenilor ce folosesc site-ul nostru</p>
+        </div>
+     
+           <iframe src="marturii/marturii.html" style="width:100%; height:500px; overflow:hidden;" ></iframe>
+
+      </div>
+    </section><!-- #portfolio -->
+	
+  <section id="dead">
+      <div class="container wow fadeIn">
+        <div class="row">
+		<div class="col-lg-1"></div>
+          <div class="col-lg-10 text-center text-lg-left">
+		  <h1 class="cta-text" style="color:white;"> Dupa Moarte </h1>
+            <h2 class="cta-text" style="color:white;">Subiectul cel mai neplacut la care se poate gandi omul este propria moarte. De cele mai multe ori acest eveniment vine cand nu ne asteptam si ne prinde nepregatiti. Noi putem sa va ajutam si sa continuam povestea pentru dumneavoastra. Putem trimite gandurile dumneavoastra catre cei dragi dincolo de intrarea dumneavoastra in nefiinta. Garantam ca mesajele dumneavoastra sunt trimise catre cei dragi!</h2>
+			<div class="col-lg-1"></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+	<center>
+	    <h1><br></h1>
+	    <h1><br></h1>
+  <a href="https://dordevoi.ro/LogInPage/LogIn.php" style="
+        text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #000;
+    color: #000;" class="btn-get-started" id="log2btn">Log In pentru a incepe</a>
+</center>
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Echipa "Dor De Voi"</h3>
+          <p class="section-description"></p>
+        </div>
+        <div class="row">
+           <div class="col-lg-3 col-md-6">
+		   </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="https://scontent.fotp3-3.fna.fbcdn.net/v/t1.0-9/545078_2894254401793_1835370562_n.jpg?oh=c21e50763b62b791ca90b3384d1f1aa7&oe=5B23370D" alt=""></div>
+              <h4> Laurentiu Buzaianu</h4>
+              <span>Fondator</span>
+              <!--
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+              -->
+            </div>
+          </div>
+		  
+		   <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="https://scontent.fotp3-3.fna.fbcdn.net/v/t1.0-9/13912338_1773634139581877_7705584212186819579_n.jpg?oh=01b1bad4bb1e223e60a15eeeb408d8f7&oe=5B23ED20" alt=""></div>
+              <h4>Alexandru Hang</h4>
+              <span>Co-fondator</span>
+              <!--
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+              -->
+            </div>
+          </div>
+           <div class="col-lg-3 col-md-6">
+		   </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <h1><br></h1>
+        </div>
+      </div>
+      <div class=" col-lg-2"></div>
+  <div class=" col-lg-4">
+
+      <div style="width: 100%"><iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Delinesti%20nr2%20bl%205a+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Add map to website</a></iframe></div><br />
+	  <br>
+	  <br>
+  </div>
+      <div class="container wow fadeInUp">
+        <div class="col-lg-6">
+
+          <div class="col-lg-6">
+<center>
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Strada Delinesti nr 2 Bl. A5 sc.f Sector 6 Bucuresti <br> Romania</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>dordevoi@yahoo.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+40727000333 </p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/Dor-De-Voi-335492530303324" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+    </center>
+    
+          </div>
+
+          <div class="col-lg-6">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <button syle="border-radius:10px;" type="submit"><h3>Trimite mesaj</h3></button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Dor de Voi</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+       
+        
+        Bootstrap Templates by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        -->
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
